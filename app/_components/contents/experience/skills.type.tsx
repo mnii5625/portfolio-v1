@@ -29,7 +29,7 @@ export enum Category {
   Frontend,
   Backend,
   Tool,
-  Devops,
+  Devops
 }
 
 export enum Skill {
@@ -48,7 +48,7 @@ export enum Skill {
   PostgreSQL,
   React,
   TypeScript,
-  VueJS,
+  VueJS
 }
 
 export const SkillMeta: Record<Skill, { name: string, dark: FC<SVGProps<SVGSVGElement>>, light: FC<SVGProps<SVGSVGElement>>, categories: Category }> = {

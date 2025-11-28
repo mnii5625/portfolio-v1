@@ -11,11 +11,11 @@ const nextConfig: NextConfig = {
             svgo: false
           }
         }],
-        as: '*.js',
+        as: '*.js'
 
-      },
-    },
-  },
+      }
+    }
+  }
 };
 
 export default nextConfig;

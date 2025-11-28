@@ -8,6 +8,7 @@ import stylistic from '@stylistic/eslint-plugin';
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
+  stylistic.configs.recommended,
   {
     files: ['**/*.{ts,tsx,cts,mts}'],
     languageOptions: {
@@ -41,7 +42,7 @@ const eslintConfig = defineConfig([
     settings: {
       'better-tailwindcss': {
         // tailwindcss 4: the path to the entry file of the css based tailwind config (eg: `src/global.css`)
-        entryPoint: 'app/globals.css',
+        entryPoint: 'app/globals.css'
       }
     }
   },
@@ -52,7 +53,15 @@ const eslintConfig = defineConfig([
       '@stylistic/quotes': ['error', 'single'],
       '@stylistic/semi': ['error', 'always'],
       '@stylistic/object-curly-spacing': ['error', 'always'],
-    },
+      '@stylistic/comma-dangle': ['error', 'never'],
+      '@stylistic/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
+      '@stylistic/jsx-curly-spacing': ['error', {
+        when: 'never',
+        children: {
+          when: 'always'
+        }
+      }]
+    }
   },
   // Override default ignores of eslint-config-next.
   globalIgnores([
@@ -60,8 +69,8 @@ const eslintConfig = defineConfig([
     '.next/**',
     'out/**',
     'build/**',
-    'next-env.d.ts',
-  ]),
+    'next-env.d.ts'
+  ])
 ]);
 
 export default eslintConfig;

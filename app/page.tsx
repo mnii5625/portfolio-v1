@@ -5,10 +5,10 @@ import Experience from '@/app/_components/contents/Experience';
 export default function Main() {
   return (
     <main>
-      <Info/>
+      <Info />
       <div>
-        <About/>
-        <Experience/>
+        <About />
+        <Experience />
       </div>
     </main>
   );
