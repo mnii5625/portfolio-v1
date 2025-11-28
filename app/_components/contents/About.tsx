@@ -1,14 +1,36 @@
 import ContentsHeader from '@/app/_components/ui/ContentsHeader';
+import { ReactNode } from 'react';
+import ReactMarkdown from 'react-markdown';
+import { about } from '@/app/portfolio.data';
+
+const Highlight = ({ children }: { children: ReactNode }) => {
+  return (
+    <span className="font-bold text-foreground">
+      { children }
+    </span>
+  );
+};
 
 export default function About() {
   return (
     <>
       <div>
         <ContentsHeader>About</ContentsHeader>
-        <div className="px-6">
-          <p>
-            I’m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.
-          </p>
+        <div className="space-y-4 px-6 text-base/6 break-keep text-muted-foreground">
+          {
+            about.content.map((content, index) => (
+              <ReactMarkdown
+                key={index}
+                components={{
+                  strong: ({ children }) => (
+                    <Highlight>{ children }</Highlight>
+                  )
+                }}
+              >
+                { content }
+              </ReactMarkdown>
+            ))
+          }
         </div>
 
       </div>

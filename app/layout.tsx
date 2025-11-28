@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`
           ${geistSans.variable}
           ${geistMono.variable}
-          antialiased
+          bg-card antialiased
         `}
       >
         <ThemeProvider enableSystem={true} defaultTheme="system">

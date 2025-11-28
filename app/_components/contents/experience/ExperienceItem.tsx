@@ -1,5 +1,5 @@
-import SkillIcon from '@/app/_components/contents/experience/SkillIcon';
 import { Skill } from '@/app/_components/contents/experience/skills.type';
+import SkillSet from '@/app/_components/contents/experience/SkillSet';
 
 export default function ExperienceItem() {
   return (
@@ -12,13 +12,11 @@ export default function ExperienceItem() {
           <a href="https://www.wbsoft.kr" target="_blank">Willbe Soft</a>
 
         </h3>
-        <p className="mb-4 text-sm text-wrap break-all">
+        <p className="mb-4 text-sm text-wrap break-all text-muted-foreground">
           descriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptionsdescriptions
         </p>
         <div className="flex gap-2">
-          <SkillIcon skill={Skill.Docker} />
-          <SkillIcon skill={Skill.IntelliJIDEA} />
-          <SkillIcon skill={Skill.JavaScript} />
+          <SkillSet skills={[Skill.JavaScript, Skill.Docker]} />
         </div>
       </div>
     </>

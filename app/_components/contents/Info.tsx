@@ -9,7 +9,7 @@ export default function Info() {
             김민기
           </Link>
         </h1>
-        <h2 className="mt-6 text-lg font-bold">
+        <h2 className="mt-6 text-xl font-bold">
           Full Stack Web Developer
         </h2>
         <h3 className="mt-3 w-80 font-light">

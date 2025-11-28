@@ -20,6 +20,8 @@ import PostgreSQLDark from './svg/PostgreSQL-Dark.svg';
 import PostgreSQLLight from './svg/PostgreSQL-Light.svg';
 import ReactDark from './svg/React-Dark.svg';
 import ReactLight from './svg/React-Light.svg';
+import SpringDark from './svg/Spring-Dark.svg';
+import SpringLight from './svg/Spring-Light.svg';
 import TypeScript from './svg/TypeScript.svg';
 import VueJSDark from './svg/VueJS-Dark.svg';
 import VueJSLight from './svg/VueJS-Light.svg';
@@ -47,6 +49,7 @@ export enum Skill {
   NuxtJS,
   PostgreSQL,
   React,
+  Spring,
   TypeScript,
   VueJS
 }
@@ -135,6 +138,12 @@ export const SkillMeta: Record<Skill, { name: string, dark: FC<SVGProps<SVGSVGEl
     dark: ReactDark,
     light: ReactLight,
     categories: Category.Frontend
+  },
+  [Skill.Spring]: {
+    name: 'Spring',
+    dark: SpringDark,
+    light: SpringLight,
+    categories: Category.Backend
   },
   [Skill.TypeScript]: {
     name: 'TypeScript',
