@@ -4,7 +4,7 @@ export default function Info() {
   return (
     <>
       <div className="px-6 py-12">
-        <h1 className="text-4xl font-extrabold">
+        <h1 className="text-4xl font-extrabold tracking-widest">
           <Link href="/">
             김민기
           </Link>

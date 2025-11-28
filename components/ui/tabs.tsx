@@ -52,9 +52,10 @@ function TabsTrigger({
           focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50
           focus-visible:outline-1 focus-visible:outline-ring
           disabled:pointer-events-none disabled:opacity-50
-          data-[state=active]:bg-background data-[state=active]:shadow-sm
-          dark:text-muted-foreground dark:data-[state=active]:border-input
-          dark:data-[state=active]:bg-input/30 dark:data-[state=active]:text-foreground
+          data-[state=active]:bg-primary data-[state=active]:text-primary-foreground
+          data-[state=active]:shadow-sm
+          dark:text-muted-foreground dark:data-[state=active]:border-primary
+          dark:data-[state=active]:bg-primary/30 dark:data-[state=active]:text-foreground
           [&_svg]:pointer-events-none [&_svg]:shrink-0
           [&_svg:not([class*='size-'])]:size-4
         `,
