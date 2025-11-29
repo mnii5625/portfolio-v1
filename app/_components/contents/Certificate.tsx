@@ -10,9 +10,9 @@ export default function Certificate() {
           <article
             key={certificate.title}
             className={`
-              group/certificate box-content rounded-sm border-2 border-transparent px-3 py-4
+              group/certificate box-content rounded-sm border-2 border-transparent px-3 pt-3 pb-4
               transition-all duration-100
-              hover:border-primary hover:bg-card
+              lg:hover:border-primary lg:hover:bg-card
             `}
           >
             <p className="mb-2 text-xs text-muted-foreground">{ certificate.date }</p>

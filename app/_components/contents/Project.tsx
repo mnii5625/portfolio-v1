@@ -6,7 +6,7 @@ export default function Project() {
   return (
     <>
       <section id="projects">
-        <ContentsHeader>Project</ContentsHeader>
+        <ContentsHeader>Projects</ContentsHeader>
         <div className="space-y-12 px-6">
           { projects.map(project => <ProjectItem project={project} key={project.title} />) }
         </div>
