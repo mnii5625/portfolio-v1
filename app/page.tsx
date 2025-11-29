@@ -3,6 +3,7 @@ import About from '@/app/_components/contents/About';
 import Experience from '@/app/_components/contents/Experience';
 import SkillStack from '@/app/_components/contents/SkillStack';
 import Project from '@/app/_components/contents/Project';
+import Certificate from '@/app/_components/contents/Certificate';
 
 export default function Main() {
   return (
@@ -10,6 +11,7 @@ export default function Main() {
       <Info />
       <div className="space-y-24">
         <About />
+        <Certificate />
         <SkillStack />
         <Experience />
         <Project />

@@ -24,6 +24,19 @@ export const about = {
   ]
 };
 
+export const certificates = [
+  {
+    date: '2023',
+    title: '정보처리기사',
+    issuer: '한국산업인력공단'
+  },
+  {
+    date: '2023',
+    title: 'SQLD ( SQL Developer )',
+    issuer: '한국데이터산업진흥원'
+  }
+];
+
 export type TExperience = { title: string, link: string, content: string, date: string, skills: Skill[] };
 
 export const experiences: TExperience[] = [
