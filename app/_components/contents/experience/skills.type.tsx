@@ -23,10 +23,13 @@ import NodeJSDark from './svg/NodeJS-Dark.svg';
 import NodeJSLight from './svg/NodeJS-Light.svg';
 import NuxtJSDark from './svg/NuxtJS-Dark.svg';
 import NuxtJSLight from './svg/NuxtJS-Light.svg';
+import Prisma from './svg/Prisma.svg';
 import PostgreSQLDark from './svg/PostgreSQL-Dark.svg';
 import PostgreSQLLight from './svg/PostgreSQL-Light.svg';
 import ReactDark from './svg/React-Dark.svg';
 import ReactLight from './svg/React-Light.svg';
+import RedisDark from './svg/Redis-Dark.svg';
+import RedisLight from './svg/Redis-Light.svg';
 import SpringDark from './svg/Spring-Dark.svg';
 import SpringLight from './svg/Spring-Light.svg';
 import TailwindCSSDark from './svg/TailwindCSS-Dark.svg';
@@ -58,6 +61,8 @@ export enum Skill {
   Spring,
   Java,
   NestJS,
+  Prisma,
+  Redis,
   MySQL,
   PostgreSQL,
   Docker,
@@ -204,6 +209,18 @@ export const SkillMeta: Record<Skill, { name: string, dark: FC<SVGProps<SVGSVGEl
     dark: TailwindCSSDark,
     light: TailwindCSSLight,
     categories: [Category.Frontend]
+  },
+  [Skill.Prisma]: {
+    name: 'Prisma',
+    dark: Prisma,
+    light: Prisma,
+    categories: [Category.Backend]
+  },
+  [Skill.Redis]: {
+    name: 'Redis',
+    dark: RedisDark,
+    light: RedisLight,
+    categories: [Category.Backend]
   }
 
 };
