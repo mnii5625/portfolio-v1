@@ -19,9 +19,17 @@ export default function Nav() {
               <li key={section.id}>
                 <a
                   href={`#${section.id}`}
-                  className="inline-flex items-center text-muted-foreground transition-all"
+                  className={`
+                    group/nav inline-flex items-center text-muted-foreground transition-all
+                    hover:text-primary
+                  `}
                 >
-                  <span className="mr-4 inline-block h-px w-8 bg-muted-foreground transition-all"></span>
+                  <span className={`
+                    mr-4 inline-block h-px w-8 bg-muted-foreground transition-all
+                    group-hover/nav:w-16 group-hover/nav:bg-primary
+                  `}
+                  >
+                  </span>
                   { section.title }
                 </a>
               </li>
