@@ -5,7 +5,7 @@ import SkillStack from '@/app/_components/contents/SkillStack';
 
 export default function Main() {
   return (
-    <main>
+    <main className="pb-12">
       <Info />
       <div>
         <About />

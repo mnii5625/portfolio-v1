@@ -10,21 +10,37 @@ export const about = {
   ]
 };
 
-export const experiences = [
+export type TExperience = { title: string, titleLink: string, content: string, date: string, skills: Skill[] };
+
+export const experiences: TExperience[] = [
   {
-    name: 'Willbe Soft',
-    content: '',
+    title: 'WillbeSoft',
+    titleLink: 'https://www.wbsoft.kr',
+    content: `\
+      윌비소프트에서 Spring Boot 기반 백엔드 개발을 주로 담당하며,
+      MySQL, Oracle, PostgreSQL 등 다양한 데이터베이스 환경에서 서비스 개발과 데이터 마이그레이션을 수행했습니다.
+
+      JSP 기반 화면 개발부터 Vue.js와 Nuxt.js를 활용한 웹 프론트엔드 개발까지 경험하며
+      서비스 전반을 이해하고 풀스택 역량을 자연스럽게 확장할 수 있었습니다.
+
+      또한 JWT 기반의 인증/인가 기능을 직접 구현해 보안성과 사용자 관리 체계를 강화했고,
+      Docker를 활용한 배포와 Jenkins를 이용한 CI/CD 파이프라인 구축을 통해
+      개발-배포 자동화 환경을 개선하여 운영 효율을 높였습니다.
+
+      이러한 경험을 통해 안정적인 서비스 구축은 물론,
+      운영과 배포까지 고려하는 개발자로 성장하게 되었습니다.`,
     date: '2022.4 — 2025.2',
     skills: [
+      Skill.JQuery,
       Skill.VueJS,
       Skill.NuxtJS,
       Skill.Docker,
-      Skill.IntelliJIDEA,
       Skill.Spring,
       Skill.MySQL,
       Skill.Java,
       Skill.Jenkins,
-      Skill.Linux
+      Skill.Linux,
+      Skill.IntelliJIDEA
     ]
   }
 ];

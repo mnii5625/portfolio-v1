@@ -1,4 +1,6 @@
+import CSS from './svg/CSS.svg';
 import Docker from './svg/Docker.svg';
+import HTML from './svg/HTML.svg';
 import IdeaDark from './svg/Idea-Dark.svg';
 import IdeaLight from './svg/Idea-Light.svg';
 import JavaDark from './svg/Java-Dark.svg';
@@ -6,6 +8,7 @@ import JavaLight from './svg/Java-Light.svg';
 import JavaScript from './svg/JavaScript.svg';
 import JenkinsDark from './svg/Jenkins-Dark.svg';
 import JenkinsLight from './svg/Jenkins-Light.svg';
+import JQuery from './svg/JQuery.svg';
 import Kubernetes from './svg/Kubernetes.svg';
 import LinuxDark from './svg/Linux-Dark.svg';
 import LinuxLight from './svg/Linux-Light.svg';
@@ -26,6 +29,8 @@ import ReactDark from './svg/React-Dark.svg';
 import ReactLight from './svg/React-Light.svg';
 import SpringDark from './svg/Spring-Dark.svg';
 import SpringLight from './svg/Spring-Light.svg';
+import TailwindCSSDark from './svg/TailwindCSS-Dark.svg';
+import TailwindCSSLight from './svg/TailwindCSS-Light.svg';
 import TypeScript from './svg/TypeScript.svg';
 import VueJSDark from './svg/VueJS-Dark.svg';
 import VueJSLight from './svg/VueJS-Light.svg';
@@ -39,6 +44,10 @@ export enum Category {
 }
 
 export enum Skill {
+  HTML,
+  CSS,
+  TailwindCSS,
+  JQuery,
   VueJS,
   NuxtJS,
   React,
@@ -171,5 +180,30 @@ export const SkillMeta: Record<Skill, { name: string, dark: FC<SVGProps<SVGSVGEl
     dark: NodeJSDark,
     light: NodeJSLight,
     categories: [Category.Backend]
+  },
+  [Skill.JQuery]: {
+    name: 'JQuery',
+    dark: JQuery,
+    light: JQuery,
+    categories: [Category.Frontend]
+  },
+  [Skill.CSS]: {
+    name: 'CSS',
+    dark: CSS,
+    light: CSS,
+    categories: [Category.Frontend]
+  },
+  [Skill.HTML]: {
+    name: 'HTML',
+    dark: HTML,
+    light: HTML,
+    categories: [Category.Frontend]
+  },
+  [Skill.TailwindCSS]: {
+    name: 'Tailwind CSS',
+    dark: TailwindCSSDark,
+    light: TailwindCSSLight,
+    categories: [Category.Frontend]
   }
+
 };
