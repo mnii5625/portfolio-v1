@@ -5,12 +5,12 @@ import { experiences } from '@/app/portfolio.data';
 export default function Experience() {
   return (
     <>
-      <div>
+      <section id="experiences">
         <ContentsHeader>Experience</ContentsHeader>
         <div className="px-6">
           { experiences.map(experience => <ExperienceItem experience={experience} key={experience.title} />) }
         </div>
-      </div>
+      </section>
     </>
   );
 }

@@ -14,7 +14,7 @@ const Highlight = ({ children }: { children: ReactNode }) => {
 export default function About() {
   return (
     <>
-      <div>
+      <section id="about">
         <ContentsHeader>About</ContentsHeader>
         <div className="space-y-4 px-6 text-base/6 break-keep text-muted-foreground">
           {
@@ -33,7 +33,7 @@ export default function About() {
           }
         </div>
 
-      </div>
+      </section>
     </>
   );
 }

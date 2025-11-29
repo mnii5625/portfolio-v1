@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Info() {
   return (
     <>
-      <div className="px-6 py-12">
+      <section className="px-6 py-12">
         <h1 className="text-4xl font-extrabold tracking-widest">
           <Link href="/">
             김민기
@@ -15,7 +15,7 @@ export default function Info() {
         <h3 className="mt-3 w-80 font-light">
           I build accessible, pixel-perfect digital experiences for the web.
         </h3>
-      </div>
+      </section>
     </>
   );
 }

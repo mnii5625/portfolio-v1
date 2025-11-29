@@ -45,7 +45,7 @@ export default function SkillStack() {
 
   return (
     <>
-      <div>
+      <section id="skills">
         <ContentsHeader>Skills</ContentsHeader>
         <div className="mx-5 space-y-2">
           <Tabs value={currentTab} onValueChange={onValueChange}>
@@ -62,7 +62,7 @@ export default function SkillStack() {
           <SkillFilter categoryKey={currentTab} />
         </div>
 
-      </div>
+      </section>
     </>
   );
 }
