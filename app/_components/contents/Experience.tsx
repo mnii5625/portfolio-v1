@@ -5,7 +5,7 @@ import { experiences } from '@/app/portfolio.data';
 export default function Experience() {
   return (
     <>
-      <section id="experience">
+      <section id="experience" className="lg:scroll-mt-24">
         <ContentsHeader>Experience</ContentsHeader>
         <div className="px-6">
           { experiences.map(experience => <ExperienceItem experience={experience} key={experience.title} />) }

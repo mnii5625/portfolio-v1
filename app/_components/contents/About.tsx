@@ -1,12 +1,14 @@
 import ContentsHeader from '@/app/_components/ui/ContentsHeader';
-import { ReactNode } from 'react';
 import { about } from '@/app/portfolio.data';
 import Markdown from '@/app/_components/ui/Markdown';
 
 export default function About() {
   return (
     <>
-      <section id="about">
+      <section
+        id="about"
+        className="lg:scroll-mt-24"
+      >
         <ContentsHeader>About</ContentsHeader>
         <div className="space-y-4 px-6 text-base/6 break-keep text-muted-foreground">
           {

@@ -8,19 +8,19 @@ import Nav from '@/app/_components/ui/Nav';
 
 export default function Main() {
   return (
-    <main className={`
-      mx-auto max-w-screen-xl pb-12
+    <div className={`
+      mx-auto pb-12
       lg:flex lg:px-12
     `}
     >
-      <div className="lg:sticky lg:top-0 lg:h-screen lg:w-[48%]">
+      <header className="lg:sticky lg:top-0 lg:h-screen lg:w-[48%]">
         <Info />
         <Nav />
-      </div>
+      </header>
 
-      <div className={`
+      <main className={`
         space-y-24
-        lg:w-[52%] lg:py-[72px]
+        lg:w-[52%] lg:py-24
       `}
       >
         <About />
@@ -28,7 +28,7 @@ export default function Main() {
         <SkillStack />
         <Experience />
         <Project />
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }

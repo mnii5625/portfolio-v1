@@ -5,7 +5,7 @@ import ProjectItem from '@/app/_components/contents/project/ProjectItem';
 export default function Project() {
   return (
     <>
-      <section id="projects">
+      <section id="projects" className="lg:scroll-mt-24">
         <ContentsHeader>Projects</ContentsHeader>
         <div className="space-y-12 px-6">
           { projects.map(project => <ProjectItem project={project} key={project.title} />) }

@@ -45,7 +45,7 @@ export default function SkillStack() {
 
   return (
     <>
-      <section id="skills">
+      <section id="skills" className="lg:scroll-mt-24">
         <ContentsHeader>Skills</ContentsHeader>
         <div className="mx-5 space-y-2">
           <Tabs value={currentTab} onValueChange={onValueChange}>

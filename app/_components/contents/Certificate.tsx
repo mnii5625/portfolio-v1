@@ -3,7 +3,7 @@ import { certificates } from '@/app/portfolio.data';
 
 export default function Certificate() {
   return (
-    <section id="certificates">
+    <section id="certificates" className="lg:scroll-mt-24">
       <ContentsHeader>Certificate</ContentsHeader>
       <div className="space-y-2 px-3">
         { certificates.map(certificate => (
