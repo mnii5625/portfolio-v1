@@ -4,6 +4,7 @@ import Experience from '@/app/_components/contents/Experience';
 import SkillStack from '@/app/_components/contents/SkillStack';
 import Project from '@/app/_components/contents/Project';
 import Certificate from '@/app/_components/contents/Certificate';
+import Nav from '@/app/_components/ui/Nav';
 
 export default function Main() {
   return (
@@ -12,7 +13,11 @@ export default function Main() {
       lg:flex lg:px-12
     `}
     >
-      <Info className="lg:sticky lg:top-0 lg:h-screen lg:w-[48%] lg:py-24" />
+      <div className="lg:sticky lg:top-0 lg:h-screen lg:w-[48%]">
+        <Info />
+        <Nav />
+      </div>
+
       <div className={`
         space-y-24
         lg:w-[52%] lg:py-[72px]

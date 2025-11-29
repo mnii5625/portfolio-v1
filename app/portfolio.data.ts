@@ -14,6 +14,29 @@ const dedent = (str: string) => {
     .join('\n');
 };
 
+export const sections = [
+  {
+    title: 'About',
+    id: 'about'
+  },
+  {
+    title: 'Certificates',
+    id: 'certificates'
+  },
+  {
+    title: 'Skills',
+    id: 'skills'
+  },
+  {
+    title: 'Experience',
+    id: 'experience'
+  },
+  {
+    title: 'Projects',
+    id: 'projects'
+  }
+];
+
 export const about = {
   content: [
     '안녕하세요, 4년차 풀스택 개발자 **김민기**입니다.',
