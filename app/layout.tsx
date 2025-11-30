@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://portfolio.mingi.kr'),
   title: 'Mingi\'s Portfolio',
   description: '코드 한 줄부터 배포 파이프라인까지, 세심하게 설계하며 견고한 서비스를 만드는 풀스택 웹 개발자입니다.'
 };
