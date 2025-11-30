@@ -9,7 +9,7 @@ import Nav from '@/app/_components/ui/Nav';
 export default function Main() {
   return (
     <div className={`
-      mx-auto max-w-screen-xl pb-12
+      mx-auto max-w-screen-xl
       lg:flex lg:px-12
     `}
     >
@@ -19,7 +19,7 @@ export default function Main() {
       </header>
 
       <main className={`
-        space-y-24
+        space-y-24 pb-12
         lg:w-[52%] lg:py-24
       `}
       >
