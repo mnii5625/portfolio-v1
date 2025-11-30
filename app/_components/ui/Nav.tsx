@@ -1,8 +1,31 @@
 'use client';
 
 import { sections } from '@/app/portfolio.data';
+import { useEffect, useState } from 'react';
 
 export default function Nav() {
+  const [activeId, setActiveId] = useState('');
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveId(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: '-100px 0px -80% 0px' }
+    );
+
+    sections.forEach(({ id }) => {
+      const element = document.getElementById(id);
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <nav className={`
       hidden
@@ -16,8 +39,16 @@ export default function Nav() {
               <a
                 href={`#${section.id}`}
                 className={`
-                  group/nav inline-flex items-center text-muted-foreground transition-all
-                  hover:text-primary
+                  group/nav inline-flex items-center transition-all
+                  ${activeId === section.id
+              ? `
+                text-primary
+                [&>span]:w-16 [&>span]:bg-primary
+              `
+              : `
+                text-muted-foreground
+                hover:text-primary
+              `}
                 `}
               >
                 <span className={`
