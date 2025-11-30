@@ -27,7 +27,7 @@ pipeline {
                             usernameVariable: 'HARBOR_USER',
                             passwordVariable: 'HARBOR_PASS'
                         )]) {
-                            sh 'echo $HARBOR_PASS | docker login $REGISTRY --username $HARBOR_USER --password-stdin'
+                            sh "echo ${HARBOR_PASS} | docker login ${REGISTRY} --username ${HARBOR_USER} --password-stdin"
                             sh '''
                                 docker buildx build \
                                 -t ${REPOSITORY}:${GIT_HASH} \
