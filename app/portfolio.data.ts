@@ -79,7 +79,7 @@ export const experiences: TExperience[] = [
 
       이러한 경험을 통해 안정적인 서비스 구축은 물론,
       운영과 배포까지 고려하는 개발자로 성장하게 되었습니다.`,
-    date: '2022.4 — 2025.2',
+    date: '2022.4 — 2025.3',
     skills: [
       Skill.JQuery,
       Skill.VueJS,
