@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Info({ className }: { className?: string }) {
+export default function Info() {
   return (
     <header className={`
       px-6 py-12
