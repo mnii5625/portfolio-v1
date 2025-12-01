@@ -37,7 +37,7 @@ export default function RootLayout({
         `}
       >
 
-        <ThemeProvider enableSystem={true} defaultTheme="system">
+        <ThemeProvider enableSystem={true} defaultTheme="dark">
           <ParticleClient />
           <Cursor />
           { children }
