@@ -4,6 +4,7 @@ import './globals.css';
 import { ThemeProvider } from 'next-themes';
 import { ReactNode } from 'react';
 import Cursor from '@/app/_components/ui/Cursor';
+import ParticleClient from '@/app/_components/ui/ParticleClient';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -35,7 +36,9 @@ export default function RootLayout({
           antialiased
         `}
       >
+
         <ThemeProvider enableSystem={true} defaultTheme="system">
+          <ParticleClient />
           <Cursor />
           { children }
         </ThemeProvider>
