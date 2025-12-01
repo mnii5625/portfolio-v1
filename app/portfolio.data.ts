@@ -100,7 +100,7 @@ export type TProject = { title: string, link: string, content: string, skills: S
 export const projects: TProject[] = [
   {
     title: 'Portfolio',
-    link: '',
+    link: 'https://portfolio.mingi.kr',
     content: dedent(`\
       **Next.js**와 **TailwindCSS** 기반 개인 포트폴리오 웹사이트입니다.
       SSR을 활용한 SEO 최적화와 빠른 로딩 속도를 구현했으며, **반응형 디자인**과 **다크모드**를 지원합니다.
