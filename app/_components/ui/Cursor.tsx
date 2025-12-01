@@ -45,7 +45,7 @@ interface Position {
   y: number
 }
 
-export default function Cursor() {
+function CursorCore() {
   const [mousePosition, setMousePosition] = useState<Position>({ x: 0, y: 0 });
   const [circlePosition, setCirclePosition] = useState<Position>({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -62,8 +62,6 @@ export default function Cursor() {
 
       // 마우스 아래 요소 확인
       const element = document.elementFromPoint(e.clientX, e.clientY);
-
-      console.log(isOverActualText(x, y));
 
       if (element) {
         const tagName = element.tagName.toLowerCase();
@@ -141,5 +139,24 @@ export default function Cursor() {
         }}
       />
     </div>
+  );
+}
+
+export default function Cursor() {
+  const [isTouchDevice, setIsTouchDevice] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setIsTouchDevice(window.matchMedia('(hover: none)').matches);
+    }
+  }, []);
+
+  if (typeof window !== 'undefined' && isTouchDevice) {
+    return <></>;
+  }
+
+  return (
+    <CursorCore />
   );
 }
