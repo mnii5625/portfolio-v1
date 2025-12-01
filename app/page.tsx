@@ -13,14 +13,14 @@ export default function Main() {
       lg:flex lg:px-12
     `}
     >
-      <header className="lg:sticky lg:top-0 lg:h-screen lg:w-[48%]">
+      <header className="lg:sticky lg:top-0 lg:h-screen lg:w-[40%]">
         <Info />
         <Nav />
       </header>
 
       <main className={`
         space-y-24 pb-12
-        lg:w-[52%] lg:py-24
+        lg:w-[60%] lg:py-24
       `}
       >
         <About />

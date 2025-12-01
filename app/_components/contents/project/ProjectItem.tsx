@@ -9,19 +9,19 @@ export default function ProjectItem({ project }: { project: TProject }) {
   return (
     <article className={`
       sm:grid sm:grid-cols-8 sm:gap-8
-      md:gap-4
+      md:gap-6
     `}
     >
       <div
         className={`
           relative mb-4 hidden aspect-video overflow-hidden rounded-sm border-2 border-border
           bg-muted
-          sm:col-span-2 sm:block
+          sm:col-span-3 sm:block
         `}
       >
         <Image src={project.image} alt={project.image} fill className="object-cover" />
       </div>
-      <div className="sm:col-span-6">
+      <div className="sm:col-span-5">
         <h3 className="mb-2 text-lg font-bold tracking-wide">
           <span className="group/link">
             {
