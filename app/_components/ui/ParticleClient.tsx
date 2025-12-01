@@ -1,6 +1,6 @@
 'use client';
 
-import Particles from '@/components/Particles';
+import Particles from '@/app/_components/ui/Particles';
 
 export default function ParticleClient() {
   return (
