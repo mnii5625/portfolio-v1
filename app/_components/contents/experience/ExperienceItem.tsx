@@ -21,23 +21,30 @@ export default function ExperienceItem({ experience }: { experience: TExperience
       <div className="sm:col-span-6">
         <h3 className="mb-2 font-bold tracking-wide">
           <span className="group/link">
-            <Link
-              href={experience.link}
-              target="_blank"
-              className={`
-                transition-all duration-150
-                group-hover/link:text-primary
-              `}
-            >
-              { experience.title }
-              <ArrowUpRight
-                className={`
-                  ml-1 inline-block transition-all duration-150
-                  group-hover/link:translate-x-1 group-hover/link:-translate-y-1
-                `}
-                size={16}
-              />
-            </Link>
+
+            {
+              experience.link
+                ? (
+                  <Link
+                    href={experience.link}
+                    target="_blank"
+                    className={`
+                      transition-all duration-150
+                      group-hover/link:text-primary
+                    `}
+                  >
+                    { experience.title }
+                    <ArrowUpRight
+                      className={`
+                        ml-1 inline-block transition-all duration-150
+                        group-hover/link:translate-x-1 group-hover/link:-translate-y-1
+                      `}
+                      size={16}
+                    />
+                  </Link>
+                )
+                : <span>{ experience.title }</span>
+            }
           </span>
         </h3>
         <p className="mb-4 text-sm text-wrap break-keep whitespace-pre-line text-muted-foreground">

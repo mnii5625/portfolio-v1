@@ -65,7 +65,7 @@ export type TExperience = { title: string, link: string, content: string, date: 
 export const experiences: TExperience[] = [
   {
     title: 'WillbeSoft',
-    link: 'https://www.wbsoft.kr',
+    link: '',
     content: `\
       윌비소프트에서 Spring Boot 기반 백엔드 개발을 주로 담당하며,
       MySQL, Oracle, PostgreSQL 등 다양한 데이터베이스 환경에서 서비스 개발과 데이터 마이그레이션을 수행했습니다.
