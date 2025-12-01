@@ -47,7 +47,7 @@ export default function SkillStack() {
     <>
       <section id="skills" className="lg:scroll-mt-24">
         <ContentsHeader>Skills</ContentsHeader>
-        <div className="mx-5 space-y-2">
+        <div className="mx-5 space-y-5">
           <Tabs value={currentTab} onValueChange={onValueChange}>
             <TabsList>
               <TabsTrigger value="TAB_ALL">전체</TabsTrigger>
