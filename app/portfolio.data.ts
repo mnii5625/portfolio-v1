@@ -113,7 +113,7 @@ export const projects: TProject[] = [
       Skill.Docker,
       Skill.Jenkins
     ],
-    image: '/moongcle.png'
+    image: '/portfolio.png'
   },
   {
     title: 'CMS',
