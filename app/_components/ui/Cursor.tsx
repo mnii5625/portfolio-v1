@@ -94,8 +94,8 @@ function CursorCore() {
         const dy = mousePosition.y - prev.y;
 
         return {
-          x: prev.x + dx * 0.7,
-          y: prev.y + dy * 0.7
+          x: prev.x + dx,
+          y: prev.y + dy
         };
       });
 
