@@ -1,19 +1,16 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from 'next-themes';
 import { ReactNode } from 'react';
 import Cursor from '@/app/_components/ui/Cursor';
 import ParticleClient from '@/app/_components/ui/ParticleClient';
+import localFont from 'next/font/local';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin']
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin']
+const pretendard = localFont({
+  src: './fonts/PretendardVariable.woff2',
+  preload: true,
+  display: 'block',
+  variable: '--font-pretendard'
 });
 
 export const metadata: Metadata = {
@@ -31,9 +28,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body
         className={`
-          ${geistSans.variable}
-          ${geistMono.variable}
-          antialiased
+          ${pretendard.variable}
+          font-sans antialiased
         `}
       >
 
